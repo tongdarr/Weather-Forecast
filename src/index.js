@@ -1,12 +1,12 @@
+// Import the React and ReactDOM libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from './components/App';
+// import LoginForm from './components/LoginForm';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const API_KEY = "4288be0591d26e26eb8ccb478188b864";
+const API_CALL = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+// Take the react component and show it on the screen
+ReactDOM.render(<App />, document.querySelector('#root'));

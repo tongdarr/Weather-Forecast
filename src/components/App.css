@@ -1,0 +1,57 @@
+#weather-form{
+    width: 40%;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+}
+
+#weather-form-inner-container{
+    width: 94%;
+    height: 94%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid rgb(102, 94, 94);
+    box-shadow: 0 2px 7px 2px rgb(75, 67, 67);
+    margin: auto;
+}
+
+#city-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.weather-form-infoline{
+    display: block;
+    position: relative;
+    height: 11.25%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    outline: 1px solid black;
+}
+
+h3{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.segment{
+    border-left: 1px solid black;
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.no-border-left{
+    border-left: none;
+}
+
+.border-right{
+    border-right: 1px solid black;
+}
